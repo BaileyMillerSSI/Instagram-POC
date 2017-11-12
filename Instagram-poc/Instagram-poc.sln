@@ -13,6 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instagram_poc.UWP", "Instag
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Instagram-poc\Instagram_poc\Instagram_poc.projitems*{3598ae24-0162-4a9e-bf35-a324a08f91d9}*SharedItemsImports = 4
 		Instagram-poc\Instagram_poc\Instagram_poc.projitems*{69646c5b-17bb-45ca-a555-507e98014e5c}*SharedItemsImports = 13
 		Instagram-poc\Instagram_poc\Instagram_poc.projitems*{93b5fa72-b866-49c4-bca4-b4a2b13f3158}*SharedItemsImports = 4
 		Instagram-poc\Instagram_poc\Instagram_poc.projitems*{de8a1e93-3f61-4633-9d82-7ffda91e7313}*SharedItemsImports = 4
