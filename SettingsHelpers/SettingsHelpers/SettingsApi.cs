@@ -223,8 +223,23 @@ namespace SettingsHelpers
             }
         }
 
+        public List<Setting> GetAllCompanySettings()
+        {
+            using (var db = CreateNewContent())
+            {
+                return db.Settings.Where(x => x.ApplicationName == ApplicationName && x.Version == Version).ToList();
+            }
+        }
 
-        public async Task<SettingsContext> CreateNewContextAsync()
+        public async Task<List<Setting>> GetAllCompanySettingsAsync()
+        {
+            using (var db = await CreateNewContextAsync())
+            {
+                return await db.Settings.Where(x => x.ApplicationName == ApplicationName && x.Version == Version).ToListAsync();
+            }
+        }
+
+        private async Task<SettingsContext> CreateNewContextAsync()
         {
             return await Task.Run(()=> 
             {
@@ -239,7 +254,7 @@ namespace SettingsHelpers
             });
         }
 
-        public SettingsContext CreateNewContent()
+        private SettingsContext CreateNewContent()
         {
             return CreateNewContextAsync().Result;
         }
