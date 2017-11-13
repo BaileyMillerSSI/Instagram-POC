@@ -2,7 +2,7 @@
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1",
     "NETStandard.Library": "2.0.1",
-    "SettingsHelpers": "1.0.2",
+    "SettingsHelpers": "1.1.0",
     "Xamarin.Forms": "2.4.0.74863"
   },
   "frameworks": {

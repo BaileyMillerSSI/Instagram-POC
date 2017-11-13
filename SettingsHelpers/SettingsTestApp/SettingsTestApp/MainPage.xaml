@@ -9,12 +9,15 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Button Clicked="Button_Clicked" Text="Add Settings"></Button>
+            <StackLayout VerticalOptions="StartAndExpand" BackgroundColor="Green" Margin="25,0,25,0">
+                <Button Clicked="Button_Clicked" Text="Add Settings"></Button>
 
-            <Label x:Name="SettingFromDatabase" VerticalOptions="CenterAndExpand" 
+                <Label x:Name="SettingFromDatabase" TextColor="White" VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Button Clicked="Button_Clicked_1" Text="Load Setting"></Button>
+                <Button Clicked="Button_Clicked_1" Text="Load Setting"></Button>
+                <Button Clicked="Button_Clicked_2" Text="Clear Setting"></Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
